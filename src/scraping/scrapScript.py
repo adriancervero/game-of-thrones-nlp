@@ -10,7 +10,7 @@ import time
 N_SEASONS = 8
 
 
-with open('../data/raw/script_raw.txt', 'w') as f:
+with open('../../data/raw/script_raw.txt', 'w') as f:
 
     for i in range(1, N_SEASONS+1):
 
@@ -42,7 +42,7 @@ with open('../data/raw/script_raw.txt', 'w') as f:
                 
 
             script_string = '\n'.join([p.text for p in paragraphs])
-            f.write(script_string)
+            f.write('\n'+script_string)
             
         
             
